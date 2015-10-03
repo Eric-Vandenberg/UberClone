@@ -20,10 +20,11 @@
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
 		81BA81811A49E10C00E65899 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81801A49E10C00E65899 /* ParseUI.framework */; };
-		B30D08281B9E350C005598CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30D08271B9E350C005598CC /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
-		B30D082A1B9E51F8005598CC /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30D08291B9E51F8005598CC /* RiderViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B30D082C1B9E7F68005598CC /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30D082B1B9E7F68005598CC /* DriverTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B30D082E1B9E9298005598CC /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30D082D1B9E9298005598CC /* RequestViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B30D08281B9E350C005598CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30D08271B9E350C005598CC /* LaunchScreen.storyboard */; };
+		B30D082A1B9E51F8005598CC /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30D08291B9E51F8005598CC /* RiderViewController.swift */; };
+		B30D082C1B9E7F68005598CC /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30D082B1B9E7F68005598CC /* DriverTableViewController.swift */; };
+		B30D082E1B9E9298005598CC /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30D082D1B9E9298005598CC /* RequestViewController.swift */; };
+		B363F9B01BBF5A78003BA603 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B363F9AF1BBF5A78003BA603 /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		B30D08291B9E51F8005598CC /* RiderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderViewController.swift; sourceTree = "<group>"; };
 		B30D082B1B9E7F68005598CC /* DriverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverTableViewController.swift; sourceTree = "<group>"; };
 		B30D082D1B9E9298005598CC /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		B363F9AF1BBF5A78003BA603 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				81BA81491A49DA1800E65899 /* Info.plist */,
 				81BA81821A49E27F00E65899 /* ParseStarterProject-Bridging-Header.h */,
+				B363F9AF1BBF5A78003BA603 /* Keys.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B363F9B01BBF5A78003BA603 /* Keys.plist in Resources */,
 				B30D08281B9E350C005598CC /* LaunchScreen.storyboard in Resources */,
 				81BA81501A49DA1800E65899 /* Main.storyboard in Resources */,
 				81BA81521A49DA1800E65899 /* Images.xcassets in Resources */,

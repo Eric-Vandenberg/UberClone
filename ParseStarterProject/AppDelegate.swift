@@ -28,9 +28,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Enable storing and querying data from Local Datastore. 
         // Remove this line if you don't want to use Local Datastore features or want to use cachePolicy.
         Parse.enableLocalDatastore()
-
-        Parse.setApplicationId("WpZNpWr960OvZfExFRCVXr9wtZLuakzos1wqxCzW",
-            clientKey: "S2j6muycmCC3NuWPpcY1S68iaOjzrmq2hpe7lecH")
+        
+        var keys: NSDictionary?
+        
+        if let path = NSBundle.mainBundle().pathForResource("Keys", ofType: "plist") {
+            keys = NSDictionary(contentsOfFile: path)
+        }
+        
+        if let _ = keys {
+            let applicationId = keys?["parseApplicationId"] as? String
+            let clientKey = keys?["parseClientKey"] as? String
+            
+            // Initialize Parse.
+            Parse.setApplicationId(applicationId!, clientKey: clientKey!)
+        }
 
         PFUser.enableAutomaticUser()
 
